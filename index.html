@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+    <title>SNEAK</title>
+    <link rel="icon" href="assets/img/icon.png" type = "image/x-icon">
+</head>
+<body>
+    <header class="menu">
+        
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <a href="./" title="SNEAK">
+                    <img class="logo" width="160" src="assets/img/logo.png">
+                </a>
+                <input type="checkbox">
+                <i class="fa fa-bars fa-2x bar-menu"></i>
+                <i class="fa fa-times fa-2x bar-menu"></i>
+                
+                <nav class="nav navbar-nav">                    
+                    <li class="active" onclick="filterList('All')">All</li>
+                    <li onclick="filterList('Branding')">Branding</li>
+                    <li onclick="filterList('Web')">Web</li>
+                    <li onclick="filterList('Photography')">Photography</li>
+                    <li onclick="filterList('App')">App</li>
+                    <li><i class="fa fa-search"></i></li>
+                </nav>
+            </div>
+          </nav>
+    </header>
+
+    
+    <section class="banner-section">
+        <div class="content-banner-section">
+            <p class="title">EXPLORE BEYOND HORIZON</p>
+
+            <p class="sub-title">Magna mundi referrentur quo, no rebum dignissim qui.<br> 
+                Per quodsi accusata id, agam labores.</p><br><br>
+
+            <button class="btn" onclick="goOurWork()">VIEW OUR WORK</button>
+        </div>        
+    </section>
+
+    <section class="body-section">
+        <div class="icons">
+            <i class="fa fa-th-large" aria-hidden="true" title="Grid" onclick="changeType('Grid')"></i>
+            <i class="fa fa-pause fa-rotate-90" aria-hidden="true" title="List" onclick="changeType('List')"></i>
+        </div>
+        
+        <header class="options" id="options">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <ul class="nav navbar-nav">
+                    <li class="active" onclick="filterList('All')">All</li>
+                    <li onclick="filterList('Branding')">Branding</li>
+                    <li onclick="filterList('Web')">Web</li>
+                    <li onclick="filterList('Photography')">Photography</li>
+                    <li onclick="filterList('App')">App</li>
+                  </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <article class="portfolio" id="portfolio">
+            
+        </article>
+    </section>
+
+    <footer class="footer">
+        <div class="option-more">
+            <button class="btn" onclick="showMeMore()">Show Me More</button>
+        </div>
+        <p>© 2016 - <font color="ff5672">Sneak</font> All Right Reserved</p>
+        <a href="#" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+        <a href="#" title="Google Plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        <a href="#" title="Youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

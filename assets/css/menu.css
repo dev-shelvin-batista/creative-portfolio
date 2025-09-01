@@ -1,0 +1,148 @@
+.menu {
+    margin-top: 20px;
+    margin-bottom: 33px;
+}
+.navbar {
+    position: relative;
+    min-height: 20px;
+    border: 1px solid transparent;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-fluid  .logo { 
+    margin-left: 20px;
+    margin-top: 0px;
+}
+.menu .navbar-nav {
+    float: right;
+    margin: 0;
+    font-family: 'Questrial Regular';
+    font-size: 14px;
+}
+.options .navbar-nav {
+    display: inline-block;
+    margin: 0;
+    font-family: 'Questrial Regular';
+    font-size: 14px;
+}
+.nav>li {
+    position: relative;
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.navbar-default .navbar-nav>.active, .navbar-default .navbar-nav>.active:focus, .navbar-default .navbar-nav>.active:hover {
+    color: #fff;
+    background-color: #ff5773;
+}
+.navbar-default .navbar-nav>li:hover {
+    background-color: rgb(252, 117, 140);
+    opacity: 0.2;
+    color: #fff;
+}
+.navbar-default .navbar-nav>li {
+    color: #777;
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar-default .navbar-nav .fa {
+    color: rgb(252, 117, 140);
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.navbar-nav>li {
+    float: left;
+    padding: 20px;
+}
+.nav>li {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+}
+
+.navbar-default .navbar-nav .bar-menu {
+    display: none;
+}
+
+.navbar input[type="checkbox"], .navbar .fa-bars, .navbar .fa-times {
+    position: absolute;
+    padding: 0;
+    right: 10px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    margin-top: -15px;
+    color: rgb(252, 117, 140);
+}
+  
+.navbar .fa-bars, .navbar .fa-times {
+    font-size: 48px;
+    pointer-events: none;
+    display: none;
+}
+
+.navbar input[type="checkbox"] {
+    opacity: 0;
+    display: none;
+}
+  
+.navbar nav {
+    display: block;
+    float: right;
+    margin: 0;
+}
+
+.navbar input:checked ~ nav  {
+    display: block;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    margin-left: -15px;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.navbar input:checked ~ .fa-bars {
+    display: none;
+}
+
+.navbar input:not(:checked) ~ .fa-times {
+    display: none;
+}
+
+
+@media (max-width: 700px) {
+    .bar-menu {
+        display: block;
+    }
+    .navbar nav {
+        display: none;
+    }
+    .navbar .fa-bars, .navbar .fa-times {
+        display: block;
+    }
+
+    .navbar input[type="checkbox"] {
+        display: block;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .menu .navbar-nav, .options .navbar-nav {
+        width: 100%;
+    }
+    .container-fluid  .logo { 
+        margin-left: 20px;
+        margin-top: 0px;
+        width: 120px;
+    }
+}

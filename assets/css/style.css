@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("../fonts/Montserrat-Bold.otf");
+}
+@font-face {
+    font-family: "Questrial Regular";
+    src: url("../fonts/Questrial-Regular.ttf");
+}
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../fonts/Montserrat-Regular.otf");
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner-section {
+    min-height: 300px;
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(252, 117, 140);
+    color: #fff;
+    text-align:center;
+    margin-top: -20px;
+}
+
+.content-banner-section {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0px;
+}
+.content-banner-section .title {
+    font-size: 39.92px;
+    font-family: 'Montserrat Bold';
+    letter-spacing: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.content-banner-section .sub-title {
+    font-family: 'Questrial Regular';
+    font-size: 16.83px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.content-banner-section .btn {
+    font-family: 'Questrial Regular';
+    font-size: 10.25px;
+    letter-spacing: 2px;
+}
+
+.body-section {
+    background-color: #fff;
+    text-align:center;
+    min-height: 300px;
+}
+
+
+
+@media (max-width: 700px) {
+    .banner-section {
+        height: 400px;
+    }
+    .content-banner-section .title {
+        font-size: 18px;
+    }
+    .content-banner-section .sub-title {
+        font-size: 12px;
+    }
+    
+}
+
+.icons {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: rgb(252, 117, 140);
+}
+
+.icons .fa {
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+button {
+    color: #ff5773;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn {
+    display: inline-block;
+    margin: 0px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: none;
+    padding: 16px 32px 16px 32px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.footer {
+    width: 100%;
+    padding: 0px;
+    min-height: 50px;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(203, 214, 221);
+    font-family: 'Questrial Regular';    
+    font-size: 13px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.footer .fa {
+    margin: 0px 10px;    
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(203, 214, 221);
+}

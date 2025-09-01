@@ -1,0 +1,139 @@
+.portfolio .info {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0px;
+    cursor: zoom-in;
+    padding: 0px;
+    width: 100%;
+    margin-top: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.portfolio .text-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+.portfolio .text-center p {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 18.51px;
+    font-family: 'Montserrat Bold';
+}
+.portfolio .text-center hr {
+    padding: 0px;
+    margin: 10px 10%;
+    width: 80%;
+}
+.portfolio .text-center small {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Questrial Regular';
+}
+
+.portfolio img {
+    width: 100%;
+    margin: 0px;
+}
+.portfolio .option {
+    min-height: 100px;
+    float: left;
+    padding: 0px;
+    margin-left: 2%;
+}
+.portfolio .option-grid {
+    width: 28%;
+}
+.portfolio .option-list {
+    width: 80%;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+.option-more {
+    width: 100%;
+    padding: 0px;
+    min-height: 50px;
+    float: left;
+    font-family: 'Questrial Regular';
+    font-size: 13px;
+    margin-top: 30px;
+}
+.option-more button {
+    background-color: #ff5773;
+    color: #fff;
+    padding: 12px 29px 12px 29px;
+    margin-bottom: 76px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .portfolio .text-center p {
+        font-size: 10px;
+    }
+    .portfolio .text-center hr {
+        margin: 5px 10% 0px 10%;
+    }
+    .portfolio .text-center small {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    .portfolio .text-center p {
+        font-size: 6px;
+    }
+    .portfolio .text-center small {
+        font-size: 8px;
+    }
+}
+
+
+.portfolio .list-unstyled {
+    position: relative;
+    list-style: none;
+}
+.portfolio .list-unstyled .thumbnail-item {
+    width: 260px; 
+    height: 222px; 
+    position: absolute; 
+    left: 0px; top: 
+    0px;
+}
+.portfolio .list-unstyled li .page-image {
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 1px #dedede;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    font-size: 0;
+}
+.portfolio .list-unstyled li .page-image img {
+    max-width: 100%;
+}
