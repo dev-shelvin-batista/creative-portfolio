@@ -1,11 +1,11 @@
 class RestService {
   constructor() {}
   /**
-   * Metodo para consumir servicio rest a una url
+   * Method for consuming a REST service at a URL
    *
-   * @param   {string}  url  URL del servicio rest o archivo a obtener el contenido
+   * @param   {string}  url  URL of the REST service or file from which to obtain the content
    *
-   * @return  {Promise<any>} Respuesta del servicio rest      
+   * @return  {Promise<any>} Response from the rest service  
    */
   getRest(url){
     return new Promise(resolve => {
@@ -17,15 +17,14 @@ class RestService {
   }
 }
 
-
 class Portfolio {
   constructor() {}
   
   /**
-   * Generar en pantalla el portafolio
+   * Generate the portfolio on screen
    *
-   * @param   {any[]}  array  Listado de portafolio a mostrar en pantalla
-   * @param   {string}       type   Tipo de visualizacion (Grid o List)
+   * @param   {any[]}  array  List of portfolios to display on screen
+   * @param   {string}       type   Display type (Grid or List)
    */
   static printPortfolio(array = [], type = "Grid") {
     let portfolio = document.getElementById("portfolio")
@@ -41,7 +40,7 @@ class Portfolio {
     thirdOption.setAttribute("class", type == "Grid" ? "option option-grid" : "option option-list") 
   
     let firstColumValue = 0;
-    // Iterar el listado para generar cada elemento en pantalla
+    // Iterate through the list to generate each element on screen
     array.map((value, index) => {
       const info = document.createElement("div");
       info.setAttribute("class", "info")
@@ -65,9 +64,7 @@ class Portfolio {
   
       info.appendChild(textCenter);
       
-      // Verificar en cual columna se agregan los items del array, 
-      // siempre y cuando el tipo de visualizacion es Grid, 
-      // sino se genera un listado
+      // Check which column the array items are added to, provided that the display type is Grid; otherwise, a list is generated.
       if(type == "Grid") {
         if(index % 3 == 0) {
           firstOption.appendChild(info);
@@ -115,8 +112,7 @@ count = 0;
 })()
 
 /**
- * Generar los 10 siguientes items del portafolio en pantalla.
- * Es usado en el evento click del boton Show Me More
+ * Generate the next 10 items in the portfolio on screen. It is used in the Show Me More button click event.
  */
 async function showMeMore() {
   const list = await filterList(category, false)
@@ -126,13 +122,12 @@ async function showMeMore() {
 }
 
 /**
- * Generar un listado del portafolio filtrando por sus categorias o 
- * generar todo el listado (All): Branding, Web, Photography, App
+ * Generate a list of the portfolio by filtering by category or generate the entire list (All): Branding, Web, Photography, App
  *
- * @param   {string}  typeList  Categoria del portafolio
- * @param   {boolean}  show     Permite validar si el listado filtrado se muestra en pantalla o se retorna en la funcion
+ * @param   {string}  typeList  Portfolio category
+ * @param   {boolean}  show     Allows you to validate whether the filtered list is displayed on screen or returned in the function.
  *
- * @return  {any[]}            Listado filtrado del portafolio. Se ejecuta cuando el parametro show es igual a false
+ * @return  {any[]}            Filtered portfolio list. Executed when the show parameter is set to false.
  */
 function filterList(typeList, show = true) {
   count = show ? 0 : count;
@@ -172,16 +167,16 @@ function filterList(typeList, show = true) {
 }
 
 /**
- * Dirigir el scroll de la pagina hacia el portafolio
+ * Scroll the page to the portfolio
  */
 function goOurWork() {
   document.getElementById("options").scrollIntoView();
 }
 
 /**
- * Funcion para cambiar el tipo de visualizacion del portafolio. Cuadricula (Grid) o Listado (List)
+ * Function to change the portfolio display type. Grid or List.
  *
- * @param   {[type]}  type  Tipo de visualización
+ * @param   {[type]}  type  Display type
  */
 function changeType (type = "Grid") {
   typeSelected = type;
@@ -190,9 +185,9 @@ function changeType (type = "Grid") {
 } 
 
 /**
- * Generar los 10 siguientes items en el listado del portafolio
+ * Generate the following 10 items in the portfolio list
  *
- * @param   {any[]}  array  Listado del portafolio
+ * @param   {any[]}  array  Portfolio list
  */
 function generateListPortfolio(array) {
   const list = array.slice(count, count + 10)
