@@ -93,7 +93,7 @@ let listPortfolio = []
 let listPortfolioShow = []
 let typeSelected = "Grid"
 let category = "All"
-count = 0;
+let count = 0;
 
 (async () => {
   const restService = new RestService();
