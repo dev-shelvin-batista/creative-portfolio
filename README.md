@@ -7,6 +7,10 @@ Project created as an example of responsive design for companies that need to di
 |Javascript          |            |
 |ES6          | |
 
+## Important note 
+
+To see a demonstration of this design, select the following link: [Demo](https://dev-shelvin-batista.github.io/creative-portfolio/)
+
 ## Instructions
 
 To run the frontend project, follow these steps:
